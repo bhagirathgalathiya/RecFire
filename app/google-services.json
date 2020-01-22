@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "902781362632",
+    "firebase_url": "https://recfire-1a345.firebaseio.com",
+    "project_id": "recfire-1a345",
+    "storage_bucket": "recfire-1a345.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902781362632:android:81ce567737afb0f2c920fd",
+        "android_client_info": {
+          "package_name": "com.bhagi.recfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902781362632-jdo0a0o5nl5pl8hsb4sajeh6nl8c57b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhagi.recfire",
+            "certificate_hash": "148a3c6ee1fd1651c3e678e63786d011b68fa357"
+          }
+        },
+        {
+          "client_id": "902781362632-3mmjpbglakqm9q93dmqo617661bfnug4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzxMxWU_r28TbjVDJRcTrdzb7Z852UXL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902781362632-3mmjpbglakqm9q93dmqo617661bfnug4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
