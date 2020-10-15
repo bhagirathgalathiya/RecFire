@@ -32,10 +32,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        
-        #code
-            
-            
+        #my upadated code
+            FirebaseRecyclerAdapter<hospital,BlogAdapter>  FirebaseRecyclerAdapter = new FirebaseRecyclerAdapter<hospital, BlogAdapter>
+                (hospital.class, R.layout.custom_list,BlogAdapter.class ,mDatabase) {
+            @Override
+            protected void populateViewHolder(BlogAdapter blogAdapter, final hospital hospi, final int i) {
+                final DatabaseReference postRef = getRef(i);
+
+                blogAdapter.setH_name(hospi.getH_name());
+                blogAdapter.setImg(hospi.getH_pgflag());
+
+                final String postKey = postRef.getKey();
+
+                blogAdapter.mView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this,Welcome.class);
+                        intent.putExtra("id",postKey);
+                        startActivity(intent);
+                    }
+                });
+            }
+        };         
         recyclerView.setAdapter(FirebaseRecyclerAdapter);
     }
 
